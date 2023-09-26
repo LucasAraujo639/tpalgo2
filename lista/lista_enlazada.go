@@ -79,6 +79,7 @@ func (lista *listaEnlazada[T]) BorrarPrimero() T {
 	auxPrimero := lista.primero.dato
 	lista.validarVacio()
 	lista.primero = lista.primero.siguiente
+	lista.largo--
 	return auxPrimero
 }
 
